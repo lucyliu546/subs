@@ -1,0 +1,54 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+    width: 100%;
+    margin: 150px auto 0 auto;
+  }
+  
+  .AutoComplete {
+    width: 100%;
+    border: 1px solid grey;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1) 0 2px 4px 1px rgba(0, 0, 0, 0.18);
+  }
+  
+  .AutoComplete input {
+    width: 100%;
+    border: none;
+    padding: 10px 5px;
+    box-sizing: border-box;
+    outline: none;
+  }
+  
+  .AutoComplete ul::before {
+    content: "";
+    border-top: 1px solid grey;
+  }
+  
+  .AutoComplete ul {
+    list-style-type: none;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid grey;
+    border-top-color: grey;
+  }
+  
+  .AutoComplete li {
+    padding: 10px 5px;
+    cursor: pointer;
+  }
+  
+  .AutoComplete li:hover {
+    text-decoration: underline;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+.Results {
+  border-width:20px;
+  border-style:solid;
+  border-color:#ffffff;
+  border-radius:50px;
+  -moz-border-radius:50px;
+  -webkit-border-radius:50px; 
+  background-color:rgb(255, 203, 250);
+}

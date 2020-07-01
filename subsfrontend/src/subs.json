@@ -1,0 +1,33 @@
+[	{
+    "subname":"baking powder",
+    "sublist": {
+    "baking soda": ".25",
+    "cream of tartar": ".5",
+    "cornstarch": ".25"
+    }
+},
+
+
+{
+    "subname":"cake flour",
+    "sublist": {
+    "all-purpose flour": ".75",
+    "cornstarch": ".125"
+    }
+},
+
+{
+    "subname":"egg",
+    "sublist":{
+    "applesauce": ".25"
+    }
+},
+
+{
+    "subname":"heavy cream",
+    "sublist":{
+    "butter": ".25",
+    "whole milk": ".75"
+    }
+}
+]
