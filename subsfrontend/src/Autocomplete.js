@@ -2,12 +2,11 @@ import React, { Component } from "react";
 import "./styles.css";
 import "./subs.json";
 import axios from "axios";
+import TextField from '@material-ui/core/TextField';
 
 class Autocomplete extends Component {
   constructor(props) {
     super(props);
-    /* ToDO: replace with call to postgresql db to retrieve data in json format*/
-    
     this.state = {
       input: "",
       suggestions: [],

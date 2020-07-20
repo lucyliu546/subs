@@ -51,10 +51,10 @@ class Results extends Component {
 			
 		return(
 			this.state.result.length > 0 ? (
-			<div>
+			<div className="List">
 				<List>
 					{Object.entries(substlist).map((t, k) => (
-					<ListItem>
+					<ListItem className="ListItem">
 						<ListItemText 
 							primary={t[0]} 
 							secondary={(t[1] * this.props.amount).toFixed(2) + " " + this.props.unit }/>

@@ -2,13 +2,36 @@
     font-family: sans-serif;
     text-align: center;
     width: 100%;
-    margin: 150px auto 0 auto;
+    
+    background-image: url("./background.jpg");
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+
+    /* Preserve aspet ratio */
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  .App button{
+    background: #ffffff;
+    margin-top: 5px;
   }
   
+  .App .Select {
+    background-color: #ffffff;
+    margin-left: auto;
+  }
+
   .AutoComplete {
-    width: 100%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    
     border: 1px solid grey;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1) 0 2px 4px 1px rgba(0, 0, 0, 0.18);
+    background-color: #ffffff;
+
   }
   
   .AutoComplete input {
@@ -44,11 +67,29 @@
   }
 
 .Results {
-  border-width:20px;
-  border-style:solid;
-  border-color:#ffffff;
   border-radius:50px;
   -moz-border-radius:50px;
   -webkit-border-radius:50px; 
-  background-color:rgb(255, 203, 250);
+  background-color:rgba(214, 214, 214, 0.877);
+  border: white;
+  border-width: thin;
+  margin-top: 20px;
+  text-align: center;
+  width: 20%;
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.Results .List{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.Results .List .ListItem{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
