@@ -3,12 +3,38 @@ import "./styles.css";
 import "./subs.json";
 import axios from "axios";
 import TextField from '@material-ui/core/TextField';
+import Autocomplete from '@material-ui/lab/Autocomplete';
+import { withStyles } from "@material-ui/core";
 
-class Autocomplete extends Component {
+const StyledText = withStyles({
+  root: {
+    '& label.Mui-focused': {
+      color: 'gray',
+    },
+    '& .MuiInput-underline:after': {
+      borderBottomColor: '#D9D9D9',
+    },
+    '& .MuiOutlinedInput-root': {
+      '& fieldset': {
+        borderColor: 'white',
+      },
+      '&:hover fieldset': {
+        borderColor: 'white',
+      },
+      '&.Mui-focused fieldset': {
+        borderColor: '#D9D9D9',
+      },
+    },
+    boxShadow: '0 3px 3px 2px rgba(240, 105, 135, .3)'
+  },
+})(TextField);
+
+class Autocompleteself extends Component {
   constructor(props) {
     super(props);
     this.state = {
       input: "",
+      ingredient: "",
       suggestions: [],
       rawOptions: [],
       options: []
@@ -27,65 +53,47 @@ class Autocomplete extends Component {
     ); 
     }
 
-
-onTextChanged = event => {
-    const value = event.target.value;
-    let suggestions = [];
-    if (value.length > 0) {
-      this.props.sendData({name: "showResult", value: false})
-      if (this.state.rawOptions) {
-        const regex = new RegExp(`^${value}`, "i");
-        let optionsArray = [];
-        const rawOptions = this.state.rawOptions
-        for (var i in rawOptions) {
-          var item = rawOptions[i];
-          optionsArray.push(item.subname);
-        } 
-        this.setState({options: optionsArray})
-      
-        suggestions = this.state.options.sort().filter(value => regex.test(value));
-      }
-    }
-    this.setState({ suggestions: suggestions, input: value });
-  };
-
-suggestionSelected(value) {
+suggestionSelected (value) {
+  if (value !== null) {
+    this.props.sendData({name: "showResult", value: false})
     this.setState({
-      input: value,
-      suggestions: []
-    });
-    this.props.sendData({ name: "ingredient", value: value });
-  };
+      ingredient: value.subname,
 
-renderSuggestions() {
-    const { suggestions } = this.state;
-    if (suggestions.length === 0) {
-      return null;
-    } else {
-      return (
-        <div>
-          <ul>
-            {suggestions.map(item => (
-              <li onClick={() => this.suggestionSelected(item)} key={item}>{item}</li>
-            ))}
-          </ul>
-        </div>
-      );
+    });
+    this.props.sendData({ name: "ingredient", value: value.subname });
     };
-  };
+  }
+
 
 render() {
-    return (
-      <div className="AutoComplete">
-        <input
-          name="ingredient"
-          value={this.state.input}
-          type="text"
-          onChange={this.onTextChanged}
-        />
-        {this.renderSuggestions()}
-      </div>
-    );
-  };
+  return (
+    <div>
+     <Autocomplete
+      name = 'ingredient'
+      
+      
+      onChange = {(event, value) => this.suggestionSelected(value)} 
+      id="autocomplete-box"
+      options={this.state.rawOptions}
+      getOptionLabel={(option) => option.subname}
+      disableClearable 
+      style={{ width: 700,
+                background: 'white',
+                justifyContent: 'center',
+                margin: '0 auto',
+                '&$cssFocused $notchedOutline': {
+                  borderColor: '#448cff',
+              },
+              '&:hover $notchedOutline':{
+                  borderColor:'#FFFFFF'
+              }
+               }}
+      renderInput={(params) => <StyledText {...params} label="Ingredient" variant="outlined"/>}
+    />
+    </div>
+  )
+  
 }
-export default Autocomplete;
+}
+
+export default Autocompleteself

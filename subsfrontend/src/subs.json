@@ -1,33 +1,223 @@
-[	{
-    "subname":"baking powder",
-    "sublist": {
-    "baking soda": ".25",
-    "cream of tartar": ".5",
-    "cornstarch": ".25"
+[
+    {
+        "subname": "baking powder",
+        "subslist": {
+            "cornstarch": ".25",
+            "baking soda": ".25",
+            "cream of tartar": ".5"
+        }
+    },
+    {
+        "subname": "baking soda",
+        "subslist": {
+            "baking powder": "3"
+        }
+    },
+    {
+        "subname": "cake flour",
+        "subslist": {
+            "cornstarch": ".125",
+            "all-purpose flour": ".75"
+        }
+    },
+    {
+        "subname": "egg",
+        "subslist": {
+            "applesauce": ".25"
+        }
+    },
+    {
+        "subname": "heavy cream",
+        "subslist": {
+            "butter": ".25",
+            "whole milk": ".75"
+        }
+    },
+    {
+        "subname": "oil",
+        "subslist": {
+            "applesauce": "1"
+        }
+    },
+    {
+        "subname": "allspice",
+        "subslist": {
+            "cinanamon": ".5",
+            "ginger": ".25",
+            "cloves": ".25"
+        }
+    },
+    {
+        "subname": "arrowroot starch",
+        "subslist": {
+            "cornstarch": "1"
+        }
+    },
+    {
+        "subname": "baking mix",
+        "subslist": {
+            "pancake mix": "1"
+        }
+    },
+    {
+        "subname": "bread crumbs",
+        "subslist": {
+            "cracker crumbs": "1"
+        }
+    },
+    {
+        "subname": "brown sugar",
+        "subslist": {
+            "white sugar": "1",
+            "molasses": ".25"
+        }
+    },
+    {
+        "subname": "butter (salted)",
+        "subslist": {
+            "vegetable oil": ".875",
+            "salt": ".01"
+        }
+    },
+    {
+        "subname": "butter (unsalted)",
+        "subslist": {
+            "vegetable oil": ".875"
+        }
+    },
+    {
+        "subname": "buttermilk",
+        "subslist": {
+            "milk": "1",
+            "lemon juice": ".06"
+        }
+    },
+    {
+        "subname": "corn syrup",
+        "subslist": {
+            "white sugar": "1.25",
+            "water": ".333"
+        }
+    },
+    {
+        "subname": "half and half",
+        "subslist": {
+            "milk": ".875",
+            "butter": ".06"
+        }
+    },
+    {
+        "subname": "heavy cream",
+        "subslist": {
+            "milk": ".75",
+            "butter": ".19"
+        }
+    },
+    {
+        "subname": "whipped cream",
+        "subslist": {
+            "frozen topping": "1"
+        }
+    },
+    {
+        "subname": "cream cheese",
+        "subslist": {
+            "cottage cheese": "1"
+        }
+    },
+    {
+        "subname": "cream of tartar",
+        "subslist": {
+            "lemon juice": "2"
+        }
+    },
+    {
+        "subname": "creme fraiche",
+        "subslist": {
+            "heavy cream": "1",
+            "plain yogurt": ".19"
+        }
+    },
+    {
+        "subname": "evaporated milk",
+        "subslist": {
+            "light cream": "1"
+        }
+    },
+    {
+        "subname": "bread Flour",
+        "subslist": {
+            "all purpose flour": "1",
+            "wheat gluten": ".02"
+        }
+    },
+    {
+        "subname": "self rising flour",
+        "subslist": {
+            "heavy cream": ".875",
+            "baking powder": ".03",
+            "salt": ".01"
+        }
+    },
+    {
+        "subname": "gelatin",
+        "subslist": {
+            "agar agar": "2"
+        }
+    },
+    {
+        "subname": "honey",
+        "subslist": {
+            "white sugar": "1.25",
+            "water":  ".333"
+        }
+    },
+    {
+        "subname": "lemon juice",
+        "subslist": {
+            "vinegar": ".5"
+        }
+    },
+    {
+        "subname": "lemon zest",
+        "subslist": {
+            "lemon juice": "2"
+        }
+    },
+    {
+        "subname": "powdered sugar",
+        "subslist": {
+            "white sugar": "1",
+            "corn starch": ".19"
+        }
+    },
+    {
+        "subname": "unsweetened chocolate",
+        "subslist": {
+            "cocoa powder": "1.5",
+            "shortening": ".5"
+        }
+    },
+    {
+        "subname": "cocoa powder",
+        "subslist": {
+            "unsweetened chocolate": ".5"
+        }
+    },
+    {
+        "subname": "semisweet chocolate",
+        "subslist": {
+            "unsweetened chocolate": "1",
+            "sugar": ".666"
+        }
+    },
+    {
+        "subname": "pumpkin pie spice",
+        "subslist": {
+            "cinnamon": ".5",
+            "ground ginger": ".333",
+            "allspice": ".1333",
+            "ground nutmeg": ".1333"
+        }
     }
-},
-
-
-{
-    "subname":"cake flour",
-    "sublist": {
-    "all-purpose flour": ".75",
-    "cornstarch": ".125"
-    }
-},
-
-{
-    "subname":"egg",
-    "sublist":{
-    "applesauce": ".25"
-    }
-},
-
-{
-    "subname":"heavy cream",
-    "sublist":{
-    "butter": ".25",
-    "whole milk": ".75"
-    }
-}
 ]

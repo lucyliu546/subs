@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
     'subs',
     'corsheaders',            
     'rest_framework',
@@ -121,3 +122,9 @@ CORS_ORIGIN_WHITELIST = [
     'http://localhost:3000',
     'http://localhost:8000',
 ]
+
+Rest_Framework = {
+    'DEFAULT_AUTHENTICATION_CLASSES':(
+        'rest_framework.authentication.TokenAuthentication',
+    )
+}
